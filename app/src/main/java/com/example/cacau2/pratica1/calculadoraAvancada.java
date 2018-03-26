@@ -2,7 +2,6 @@ package com.example.cacau2.pratica1;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -150,17 +149,17 @@ public class calculadoraAvancada extends AppCompatActivity implements OnClickLis
                         }
                         else if(multiplicacao) finalResult = Float.valueOf(individualValues[0]) *  Float.valueOf(individualValues[1]);
 
-                        Log.v("CATEGORIA", "Valor final: " + finalResult);
+                        //Log.v("CATEGORIA", "Valor final: " + finalResult);
 
                         //if result is integer (so won't print a float number)
                         if(finalResult == Math.round(finalResult)) {
                             Integer aux = Math.round(finalResult);
                             valuesTyped = aux.toString();
-                            Log.v("CATEGORIA", "Valor final integer: " + valuesTyped);
+                            //Log.v("CATEGORIA", "Valor final integer: " + valuesTyped);
                         }
                         else { //if result is float
                             valuesTyped = finalResult.toString();
-                            Log.v("CATEGORIA", "Valor final float: " + valuesTyped);
+                            //Log.v("CATEGORIA", "Valor final float: " + valuesTyped);
                         }
 
                         soma = false; subtracao=false; multiplicacao=false; divisao=false;
